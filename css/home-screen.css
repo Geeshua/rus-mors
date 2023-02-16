@@ -1,0 +1,66 @@
+.home-screen{
+    width: 1440px;
+    min-height: 720px;
+    background: url(../img/home-screen_bg.png);
+    margin-bottom: 70px;
+    background-repeat: no-repeat;
+}
+
+.home-screen__scheme{
+    padding: 40px 50px;
+    min-height: 720px;
+    background-color:  rgba(61, 52, 78, 0.25);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.logo{
+    height: 62px;
+    width: 300px;
+    background-image: url(../img/Logo.svg);
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    height: 23px;    
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F4E2D8;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item{
+    margin-right: 23px;
+}
+.nav__item:last-child{
+    margin-right: none;
+}
+
+.home-screen__title{
+    padding-left:  775px;
+    font-family: 'Ruslan Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 62px;
+    /* or 97% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}
