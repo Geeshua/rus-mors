@@ -1,6 +1,6 @@
 .footer{
     background-color: #132C14;
-    min-height: 136px;
+    height: 136px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,4 +12,28 @@
     line-height: 100%;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
+}
+
+.footer::before{
+    content: '';
+    background-image: url(../img/pines_bottom.png);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 3790px;
+    left: 0;
+    width: 1920px;
+    height: 315px;
+}
+
+@media (max-width: 1536px){
+    .footer::before{
+        width: 1536px;
+        height: 252px;
+        background-image: url(../img/pines_bottom-1536.png);
+        top: 3320px;
+    }
+    .footer{
+        padding: 0 480px;
+    }
 }

@@ -2,13 +2,13 @@
     position: absolute;
     z-index: -2;
     background-image: url(../img/product__bg.png);
-    width: 1920px;
-    min-height: 1229px;
+    max-width: 1920px;
+    max-height: 1229px;
 }
 
 .product__title{
     padding-top: 240px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 40px;
     line-height: 100%;
     text-align: center;
@@ -70,12 +70,37 @@
 
 .product-text{
     padding: 0 317px;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 100%;
-    text-align: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #000000;
     margin-bottom: 130px;
+    white-space: pre-line;
 }
 
+@media (max-width: 1536px){
+    .product__title{
+        margin-bottom: 20px;
+    }
+    .product-content{
+        margin-bottom: 40px;
+    }
+    .content-text{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .product-text{
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
+
+    .bottle__container{
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(2, 200px)    
+    }
+
+    .arrow{
+        scale: 0.7;
+    }
+    .bottle{
+        scale: 0.7;
+    }
+}

@@ -5,12 +5,10 @@
 
 .contacts__title{
     padding-top: 100px;
-    font-weight: 400;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 36px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     text-align: center;
-    color: #000000;
     margin-bottom: 50px;
 }
 
@@ -70,4 +68,22 @@
     color: #CA2D24;
     margin-left: 397px;
     margin-bottom: 100px;
+}
+
+@media (max-width: 1536px){
+    .contacts{
+        margin-top: 930px;
+    }
+    .contacts__title{
+        padding-top: 50px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .contacts__form{
+        padding: 0 418px;
+    }
+    .contacts__button{
+        margin-left: 197px;
+        margin-bottom: 60px;
+    }
 }
