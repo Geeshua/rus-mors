@@ -1,0 +1,81 @@
+.product{
+    position: absolute;
+    z-index: -2;
+    background-image: url(../img/product__bg.png);
+    width: 1920px;
+    min-height: 1229px;
+}
+
+.product__title{
+    padding-top: 240px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
+.product-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 210px;
+    margin-bottom: 70px;
+}
+
+
+.content-text{
+    font-family: 'Ruslan Display', cursive;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 100%;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin-right: 22px;
+}
+
+.content-text:last-child{
+    margin-right: 0;
+}
+
+.arrow{
+    background-image: url(../img/arrow.svg);
+    width: 220.56px;
+    height: 216.2px;
+}
+
+.bottle__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr)    
+}
+
+
+.bottle{
+    background-image: url(../img/bottle.svg);
+    background-repeat: no-repeat;
+    width: 110.56px;
+    height: 237.25px;
+    margin-right: 65px;
+    margin-bottom: 25px;
+}
+
+.bottle:nth-child(3n){
+    margin-right: 0;
+}
+
+
+.product-text{
+    padding: 0 317px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin-bottom: 130px;
+}
+

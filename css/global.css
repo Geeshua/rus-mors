@@ -9,7 +9,7 @@ html{
 body{
     min-width: 320px;
     min-height: 100vh;
-    font-family: Roboto, sans-serif;
+    font-family: sans-serif;
     background-color: #F9F9F9;;
     font-size: 14px;
     font-weight: 400;
@@ -76,3 +76,12 @@ p{
     text-align: center;
     color: #383A4C;
 }
+
+body{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h1,h2{
+    font-family: 'Ruslan Display', cursive;
+}
+

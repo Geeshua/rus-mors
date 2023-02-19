@@ -1,0 +1,15 @@
+.footer{
+    background-color: #132C14;
+    min-height: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 570px;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}

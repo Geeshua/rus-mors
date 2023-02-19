@@ -1,160 +1,73 @@
-/* .contacts{
-    max-width: 1600px;
-    min-height: 398px;
-    background: url(../img/contacts.png);
-}
-
-.contacts__scheme{
-    min-height: 398px;
-    background: rgba(47, 50, 75, 0.85);
-    padding-bottom: 70px;
+.contacts{
+    margin-top: 1228px;
+    background-color: #A5C168;
 }
 
 .contacts__title{
-    font-family: Roboto;
-    padding-top: 70px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 41px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 18px;
-    padding-right: 23px;
-}
-
-.contacts__subtitle{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 51px;
-}
-
-.contacts__list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contacts__item{
-    margin-bottom: 21px;
-}
-
-
-.item__input{
-    width: 424px;
-    height: 44px;
-    background-color: inherit;
-    border: 1.38235px solid #FFFFFF;
-    border-radius: 50px;
-    padding: 2px 0 0 23.8px;
-}
-
-.item__input::placeholder{
+    padding-top: 100px;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.contacts__item:last-child{
+    font-size: 36px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    text-align: center;
+    color: #000000;
     margin-bottom: 50px;
 }
 
+.contacts__form{
+    padding: 0 610px;
+}
+
+.form__grid{
+    display: grid;
+    grid-template-columns: 286.25px 401.35px;
+    grid-template-rows: 68.14px 68.14px;
+    column-gap: 12.73px;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    background: #FFF8F4;
+    border: 2px solid #000000;
+    border-radius: 7px;
+}
+
+
+.form__input--comment{
+    width: 700px;
+    height: 176.47px;
+    background: #FFF8F4;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form__input::placeholder{
+    position: absolute;
+    top: -5px   ;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    padding: 24px;
+}
 
 .contacts__button{
-    display: block;
-    margin: 0 auto 50px;
-    width: 218px;
-    height: 48px;
-    background: #15A9CB;
-    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
-    border-radius: 50px;
-    border: none;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    padding: 0 3px 2px 0;
-    color: #FFFFFF;
-}
-
-.contacts__agreement{
+    width: 303px;
+    height: 68px;
+    background: #FFF8F4;
+    border: 4px solid #CA2D24;
+    border-radius: 10px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 24px;
+    line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #CA2D24;
+    margin-left: 397px;
+    margin-bottom: 100px;
 }
-
-.agreement__link{
-    color: #4A76A8;
-}
-
-@media  (max-width: 1440px) {
-    .contacts{
-        background-image: url(../img/contacts_1024.png  );
-    }
-
-    .contacts__scheme{
-        padding-bottom: 56px;
-    }
-
-    .item__input{
-        width: 377px;
-        height: 39px;       
-    }
-
-    .item__input::placeholder{
-        font-size: 20px;
-        line-height: 23px;
-    }
-
-    .contacts__button{
-        margin-bottom: 30px;
-    }
-
-}
-
-@media (max-width: 320px) {
-    .contacts{
-        background-image: url(../img/contacts_320.png  );
-    }
-
-    .contacts__scheme{
-        padding-bottom: 30px;
-    }
-
-    .contacts__title{
-        padding-top: 30px;
-        font-size: 20px;
-        line-height: 23px;
-    }
-
-    .contacts__subtitle{
-        font-size: 12px;
-        line-height: 14px;
-        margin-bottom: 35px;
-    }
-
-    .item__input{
-        width: 290px;
-        height: 28px;     
-    }
-
-    .item__input::placeholder{
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .contacts__button{
-        margin-bottom: 30px;
-    }
-
-    .contacts__agreement{
-        font-size: 11px;
-        line-height: 13px;  
-    }
-} */

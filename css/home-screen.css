@@ -1,66 +1,62 @@
 .home-screen{
-    width: 1440px;
-    min-height: 720px;
-    background: url(../img/home-screen_bg.png);
-    margin-bottom: 70px;
+    max-width: 1920px;
+    min-height: 960px;
+    background-image: url(../img/home-screen__bg-max.png);
     background-repeat: no-repeat;
+    margin-bottom: 122.5px;
 }
-
-.home-screen__scheme{
-    padding: 40px 50px;
-    min-height: 720px;
-    background-color:  rgba(61, 52, 78, 0.25);
-}
-
 .header{
+    background-color: rgba(34, 48, 28, 0.5);
+    border-bottom: 2px solid #FFF7F3;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
+    padding: 0 128px 0 228px;
 }
-
 .logo{
-    height: 62px;
-    width: 300px;
-    background-image: url(../img/Logo.svg);
-    background-repeat: no-repeat;
+    padding: 17px 0;
 }
-
 .navigation{
-    height: 23px;    
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 23px;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #F4E2D8;
+    display: flex;
+    align-items: center;
 }
 
 .nav__list{
     display: flex;
-    justify-content: space-between;
-}
 
-.nav__item{
-    margin-right: 23px;
 }
-.nav__item:last-child{
-    margin-right: none;
+.nav__item{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin-right: 24px;
+    }
+    
+.nav_item:last-child{
+    margin-right: 0;
 }
 
 .home-screen__title{
-    padding-left:  775px;
-    font-family: 'Ruslan Display';
-    font-style: normal;
+    padding: 137px 228px 0 1084px;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 70px;
     line-height: 62px;
-    /* or 97% */
-
-    display: flex;
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
-
     color: #FFFFFF;
 }
+
+.home-screen::after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 240px;
+    background-image: url(../img/pines_top.png);
+    width: 1920px;
+    height: 1400px;
+}
+
