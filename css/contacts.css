@@ -70,6 +70,21 @@
     margin-bottom: 100px;
 }
 
+@media (max-width: 1668px){
+    .contacts{
+        margin-top: 1214px;
+    }
+    .contacts__title{
+        padding-top: 50px;
+    }
+    .contacts__form{
+        padding: 0 482px;
+    }
+    .contacts__button{
+        margin-bottom: 90px;
+    }
+}
+
 @media (max-width: 1536px){
     .contacts{
         margin-top: 930px;

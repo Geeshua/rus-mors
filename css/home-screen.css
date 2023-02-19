@@ -55,6 +55,20 @@
     height: 1400px;
 }
 
+@media (max-width: 1686px){
+    .home-screen{
+        margin-bottom: 40px;
+    }
+    .home-screen__title{
+        padding: 100px 100px 0 950px;
+    }
+    .home-screen::after{
+        width: 1668px;
+        height: 1216.25px;
+        top: 340px;
+        background-image: url(../img/pines_top-1668.png);
+    }
+}
 
 @media (max-width: 1536px) {
     .home-screen{
@@ -78,3 +92,4 @@
         background-image: url(../img/pines_top-1536.png);
     }
 }
+

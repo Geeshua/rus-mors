@@ -74,6 +74,20 @@
     white-space: pre-line;
 }
 
+@media (max-width: 1668px){
+    .product{
+        width: 1668px;
+    }
+    .content-text{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .product-text{
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
 @media (max-width: 1536px){
     .product{
         width: 1536px;

@@ -73,6 +73,23 @@
     top: 2102px;
 }
 
+@media (max-width: 1668px){
+    .advantages__subtitle{
+        margin-bottom:  15px;
+    }
+    .advantages::after{
+        top: 1493px;
+        left: 500px;
+        width: 704px;
+        height: 704px;
+    }
+    .berry{
+        left: 775px;
+        top: 2030px;
+        scale: 1.15;
+    }
+}
+
 @media (max-width: 1536px){
     .advantages{
         padding-top: 430px;

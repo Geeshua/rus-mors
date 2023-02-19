@@ -84,6 +84,17 @@ p{
     color: #000000;
 }
 
+
+body{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h1,h2{
+    font-family: 'Ruslan Display', cursive;
+}
+
+/*! @media (max-width: 1668px) */
+
 @media (max-width: 1536px) {
     h1{
         font-size: 56px;
@@ -94,12 +105,4 @@ p{
     }
 }
 
-
-body{
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-h1,h2{
-    font-family: 'Ruslan Display', cursive;
-}
-
+/*! @media (max-width: 393px) */

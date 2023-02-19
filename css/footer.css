@@ -26,6 +26,15 @@
     height: 315px;
 }
 
+@media (max-width: 1668px){
+    .footer::before{
+        width: 1668px;
+        height: 273.66px;
+        background-image: url(../img/pines_bottom-1668.png);
+        top: 3680px;
+    }
+}
+
 @media (max-width: 1536px){
     .footer::before{
         width: 1536px;
