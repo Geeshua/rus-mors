@@ -75,6 +75,9 @@
 }
 
 @media (max-width: 1536px){
+    .product{
+        width: 1536px;
+    }
     .product__title{
         margin-bottom: 20px;
     }
