@@ -74,5 +74,7 @@
     .home-screen::after{
         width: 1536px;
         height: 1190px;
+        top: 380px;
+        background-image: url(../img/pines_top-1536.png);
     }
 }
