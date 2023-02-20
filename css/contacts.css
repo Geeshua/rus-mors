@@ -121,6 +121,7 @@
     .contacts__form{
         padding: 0 65px;
     }
+
     
     .form__grid{
         display: flex;
@@ -129,16 +130,16 @@
         gap: 10px;
     }
     
-    .form__input {
-        height: 30px;
-        background: #FFF8F4;
-        border: 2px solid #000000;
-        border-radius: 7px;
+    .form__flex{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
     }
-    
+
     
     .form__input--comment{
-        width: 281.4px;
+        width: 284px;
         height: 100px;
         background: #FFF8F4;
         border: 2px solid #000000;
@@ -176,13 +177,13 @@
     }
 }
 
-@media (max-width:393px) {
+@media (max-width:394px) {
     .contacts{
     width: 393px;
     }
-
-    
     .form__input--comment{
-        width: 260.4px;
+        width: 263px;
     }
+
+
 }
