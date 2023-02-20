@@ -162,3 +162,24 @@
         height: 301.88px;
     }
 }
+
+@media (max-width: 394px){
+    .header{
+        width: 393px;
+        padding: 0 30px 0 0px;
+    }
+
+    .home-screen{
+        width: 393px;
+    }
+
+    .home-screen::after{
+        width: 393px;
+        height: 286.56px;
+    }
+
+    .home-screen__title{
+        width: 393px;
+        padding: 15px 30px 0 195px;
+    }
+}

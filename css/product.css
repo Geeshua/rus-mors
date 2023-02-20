@@ -202,3 +202,9 @@
         line-height: 10px;
     }
 }
+
+@media (max-width: 394px) {
+    .product{
+        width: 393px;
+    }
+}

@@ -76,3 +76,15 @@
         height: 67.92px;
     }    
 }
+
+
+@media (max-width: 394px){
+    .footer{
+        width: 393px;
+    }
+    .footer::before{
+        width: 393px;
+        height: 64.48px;
+        top: 1081px;
+    }
+}

@@ -175,3 +175,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width:394px) {
+    .contacts{
+    width: 393px;
+}
+}

@@ -194,3 +194,10 @@
         top: 448px;
     }
 }
+
+@media (max-width: 394px) {
+    .advantages{
+    width: 393px;
+    }
+    
+}

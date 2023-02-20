@@ -133,4 +133,10 @@ h1,h2{
     }
 }
 
+@media(max-width: 394px){
+    body{
+        width: 393px;
+    }
+
+}
 /*! @media (max-width: 393px) */
