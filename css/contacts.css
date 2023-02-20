@@ -179,5 +179,10 @@
 @media (max-width:394px) {
     .contacts{
     width: 393px;
-}
+    }
+
+    
+    .form__input--comment{
+        width: 260.4px;
+    }
 }
