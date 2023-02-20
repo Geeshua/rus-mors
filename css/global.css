@@ -93,7 +93,15 @@ h1,h2{
     font-family: 'Ruslan Display', cursive;
 }
 
-/*! @media (max-width: 1668px) */
+@media (max-width: 1668px) {
+    h1{
+        font-size: 65px;
+        line-height: 65px;
+    }
+    body{
+        width: 1668px;
+    }
+}
 
 @media (max-width: 1536px) {
     h1{
@@ -102,6 +110,26 @@ h1,h2{
     }
     body{
         width: 1536px;
+    }
+}
+
+@media (max-width: 415px) {
+    h1{
+        font-size: 17px;
+        line-height: 17px;
+    }
+    body{
+        width: 414px;
+    }
+
+    h2{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    p{
+        font-size: 10px;
+        line-height: 10px;
     }
 }
 

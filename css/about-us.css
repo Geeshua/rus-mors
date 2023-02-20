@@ -40,3 +40,40 @@
         line-height: 35px;
     }
 }
+
+@media (max-width: 415px){
+    .about-us{
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .about-us__title::before{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/before-min.png);
+        width: 47px;
+        height: 16px;
+        margin-right: 3px;
+    }
+    
+    .about-us__title{
+        margin-bottom: 10px;
+    }
+    
+    .about-us__title::after{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/after-min.png);
+        width: 47px;    
+        height: 16px;
+        margin-left: 3px;
+    }
+    
+    .about-us__text{
+        padding: 0 25px;
+        font-size: 10px;
+        line-height: 10px;
+        white-space: pre-line;
+    }
+    
+}

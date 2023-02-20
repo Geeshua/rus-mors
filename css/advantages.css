@@ -116,3 +116,81 @@
         scale: 1.25;
     }
 }
+
+@media (max-width: 415px){
+    .advantages{
+        padding-top: 90px;
+        background-color: #A5C168;
+    }
+    
+    .advantages__title::before{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/before-min.png);
+        width: 47px;
+        height: 16px;
+        margin-right: 3px;
+    }
+    
+    .advantages__title{
+        margin-bottom: 10px;
+    }
+    
+    .advantages__title::after{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/after-min.png);
+        width: 47px;
+        height: 16px;
+        margin-left: 3px;
+    }
+    .advantages__subtitle{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+        margin-bottom: 12px;
+        }
+    
+    .advantages__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+    }
+    
+    .advantages__item{
+        text-align: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+        margin-bottom: 4px;
+    }
+    .advantages__item:last-child{
+        margin-bottom:  0px;
+    }
+    
+    .advantages::after{
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 303px;
+        left: 82px;
+        background-image: url(../img/Ellipse-min.png);
+        width: 246px;
+        height: 246px;
+    }
+    
+    .berry{
+        position: absolute;
+        scale: 0.35;
+        left: 136px;
+        top: 448px;
+    }
+}
