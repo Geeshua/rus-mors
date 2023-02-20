@@ -182,7 +182,7 @@
     width: 393px;
     }
     .form__input--comment{
-        width: 263px;
+        width: calc(393px - 130px);
     }
 
 
