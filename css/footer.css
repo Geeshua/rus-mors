@@ -44,6 +44,19 @@
     }
 }
 
+@media (max-width: 1520px)
+{
+    .footer::before{
+        width: 1519px;
+    }
+}
+
+@media (max-width: 1518px) {
+    .footer::before{
+        width: 100vw;
+    }
+}
+
 @media (max-width: 1020px){
     .footer-text{
         font-size: 25px;

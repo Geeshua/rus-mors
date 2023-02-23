@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    min-width: 320px;
+    width: 100vw;
     min-height: 100vh;
     font-family: sans-serif;
     background-color: #F9F9F9;;
@@ -15,7 +15,7 @@ body{
     font-weight: 400;
     color: black;
     line-height: 1;
-
+    overflow-x:hidden;
 }
 
 img{
@@ -51,6 +51,7 @@ section{
 
 button{
     cursor: pointer;
+    caret: ;
 }
 
 h1{

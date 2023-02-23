@@ -2,7 +2,7 @@
     position: absolute;
     z-index: -2;
     background-image: url(../img/product__bg.png);
-    max-width: 100vw;
+    width: 100vw;
     max-height: 1229px;
 }
 
