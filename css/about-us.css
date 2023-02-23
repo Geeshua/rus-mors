@@ -41,6 +41,51 @@
     }
 }
 
+@media (max-width: 1300px){
+    .about-us__text{
+    padding: 0 110px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .about-us__title::before{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/before-mid.png);
+        width: 91px;
+        height: 31px;
+        margin-right: 3px;
+    }
+    
+    .about-us__title{
+        margin-bottom: 10px;
+    }
+    
+    .about-us__title::after{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/after-mid.png);
+        width: 91px;    
+        height: 31px;
+        margin-left: 3px;
+    }
+
+    .about-us__text{
+        padding: 0 80px;
+        font-size: 25px;
+        line-height: 25px;
+        }
+}
+
+
+@media (max-width: 730px){
+    .about-us__text{
+        padding: 0 60px;
+        font-size: 20px;
+        line-height: 20px;
+        }
+}
+
 @media (max-width: 415px){
     .about-us{
         z-index: 2;

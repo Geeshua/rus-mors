@@ -1,5 +1,5 @@
 .home-screen{
-    max-width: 1920px;
+    width: 100vw;
     min-height: 960px;
     background-image: url(../img/home-screen__bg-max.png);
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 }
 
 .home-screen__title{
-    padding: 137px 228px 0 1084px;
+    padding: 137px 5% 0 57%;
 }
 
 .home-screen::after{
@@ -55,7 +55,7 @@
     z-index: 1;
     top: 240px;
     background-image: url(../img/pines_top.png);
-    width: 1920px;
+    width: 100vw;
     height: 1400px;
 }
 
@@ -64,10 +64,9 @@
         margin-bottom: 40px;
     }
     .home-screen__title{
-        padding: 100px 100px 0 950px;
+        padding-top: 100px;
     }
     .home-screen::after{
-        width: 1668px;
         height: 1216.25px;
         top: 340px;
         background-image: url(../img/pines_top-1668.png);
@@ -87,13 +86,105 @@
         margin-right: 18px;
     }
     .home-screen__title{
-        padding: 100px 100px 0 970px;
+        padding: 140px 30%;
+        text-align: center;
+        background: radial-gradient(rgba(34, 48, 28, 0.4), transparent);
     }
     .home-screen::after{
-        width: 1536px;
         height: 1190px;
         top: 380px;
         background-image: url(../img/pines_top-1536.png);
+    }
+}
+
+@media (max-width: 1300px) {
+    .header{
+        padding-left: 50px;
+    }
+
+    .home-screen{
+        margin-bottom: 0px;
+        min-height: 920px;
+    }
+
+    .home-screen__title{
+        padding-top: 200px;
+    }
+
+    .home-screen::after{
+        height: 1190px;
+        top: 310px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .home-screen{
+        background-image: url(../img/home-screen__bg-mid.png);
+        background-repeat: no-repeat;
+        min-height: 650px;
+
+    }
+
+    .header{
+        background-color: rgba(34, 48, 28, 0.5);
+        border-bottom: 2px solid #FFF7F3;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    
+    .home-screen__title{
+        padding-top: 170px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-min{
+        display: block;
+        padding: 3px 0 3px 8px;
+    }
+
+    .navigation{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav__list{
+        display: flex;
+        padding-right: 8px;
+    
+    }
+    .nav__item{
+        font-weight:400;
+        font-size: 13px;
+        line-height: 13px;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        margin-right: 10px;
+    }
+        
+    .nav__item:last-child{
+        margin-right: 0;
+    }
+
+    .home-screen::after{
+        top: 40px;
+    }
+}
+
+@media (max-width: 730px){
+    .header{
+        padding: 0;
+    }
+
+    .nav__item{
+        font-weight:300;
+        font-size: 9px;
+        line-height: 9px;
+        margin-right: 7px;
     }
 }
 
@@ -112,6 +203,10 @@
         display: flex;
         justify-content: space-between;
         padding: 0;
+    }
+
+    .home-screen__title{
+        padding: 15px 5% 0 57%;;
     }
     
     .logo{
@@ -147,10 +242,6 @@
         margin-right: 0;
     }
     
-    .home-screen__title{
-        padding: 15px 30px 0 230px;
-    }
-    
     .home-screen::after{
         content: '';
         display: block;
@@ -158,27 +249,27 @@
         z-index: 1;
         top: 50px;
         background-image: url(../img/pines_top-414.png);
-        width: 414px;
+        width: 100vw;
         height: 301.88px;
     }
 }
 
 @media (max-width: 394px){
-    .header{
-        width: 393px;
-    }
-
-    .home-screen{
-        width: 393px;
-    }
 
     .home-screen::after{
-        width: 393px;
         height: 286.56px;
     }
 
     .home-screen__title{
-        width: 393px;
-        padding: 15px 30px 0 195px;
+        padding: 15px 5% 0 57%;;
+    }
+}
+
+
+@media (max-width: 324px){
+
+    .nav__item{
+        font-size: 6px;
+        line-height: 6  px;
     }
 }

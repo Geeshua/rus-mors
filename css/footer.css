@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 570px;
+    padding: 0 calc((100vw - 700px)/2);
 }
+
 .footer-text{
     font-weight: 400;
     font-size: 32px;
@@ -17,35 +18,55 @@
 .footer::before{
     content: '';
     background-image: url(../img/pines_bottom.png);
+    background-repeat: no-repeat;
     display: block;
     position: absolute;
     z-index: 1;
-    top: 3790px;
+    align-self: self-end;
+    padding-bottom: 400px;
     left: 0;
-    width: 1920px;
+    width: 100vw;
     height: 315px;
 }
 
 @media (max-width: 1668px){
     .footer::before{
-        width: 1668px;
         height: 273.66px;
         background-image: url(../img/pines_bottom-1668.png);
-        top: 3680px;
     }
 }
 
 @media (max-width: 1536px){
     .footer::before{
-        width: 1536px;
         height: 252px;
+        padding-bottom: 380px;
         background-image: url(../img/pines_bottom-1536.png);
-        top: 3320px;
-    }
-    .footer{
-        padding: 0 480px;
     }
 }
+
+@media (max-width: 1020px){
+    .footer-text{
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+    .footer{
+        padding: 0 calc((100vw - 470px)/2);
+    }
+}
+
+@media (max-width: 540px){
+
+    .footer{
+        padding: 0 calc((100vw - 300px)/2);
+    }
+
+    .footer-text{        
+        font-size: 15px;
+        line-height: 100%;
+    }
+}
+
 
 @media (max-width: 415px) {
     .footer{
@@ -54,7 +75,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 70px;
+        padding: 0 calc((100vw - 220px)/2);
     }
     .footer-text{
         font-weight: 400;
@@ -70,21 +91,15 @@
         display: block;
         position: absolute;
         z-index: 1;
-        top: 1078px;
         left: 0;
-        width: 414px;
         height: 67.92px;
+        padding-bottom: 115px;
     }    
 }
 
 
 @media (max-width: 394px){
-    .footer{
-        width: 393px;
-    }
     .footer::before{
-        width: 393px;
         height: 64.48px;
-        top: 1081px;
     }
 }

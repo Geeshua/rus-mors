@@ -13,7 +13,7 @@
 }
 
 .contacts__form{
-    padding: 0 610px;
+    padding: 0 calc((100vw - 700px)/2);
 }
 
 .form__grid{
@@ -29,11 +29,12 @@
     background: #FFF8F4;
     border: 2px solid #000000;
     border-radius: 7px;
+    padding: 0 24px;
 }
 
 
 .form__input--comment{
-    width: 700px;
+    width: 100%;
     height: 176.47px;
     background: #FFF8F4;
     border: 2px solid #000000;
@@ -50,7 +51,6 @@
     line-height: 24px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
-    padding: 24px;
 }
 
 .contacts__button{
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #CA2D24;
-    margin-left: 397px;
+    margin-left: calc(700px - 303px);
     margin-bottom: 100px;
 }
 
@@ -77,9 +77,6 @@
     .contacts__title{
         padding-top: 50px;
     }
-    .contacts__form{
-        padding: 0 482px;
-    }
     .contacts__button{
         margin-bottom: 90px;
     }
@@ -87,21 +84,118 @@
 
 @media (max-width: 1536px){
     .contacts{
-        margin-top: 930px;
+        margin-top: 890px;
     }
     .contacts__title{
         padding-top: 50px;
         font-size: 36px;
         line-height: 36px;
     }
-    .contacts__form{
-        padding: 0 418px;
-    }
+
     .contacts__button{
-        margin-left: 197px;
         margin-bottom: 60px;
     }
 }
+
+@media (max-width: 1020px){
+    .contacts{
+        margin-top: 990px;
+    }
+}
+
+@media (max-width: 810px)
+{
+    .contacts{
+        margin-top: 820px;
+    }
+    
+    .contacts__form{
+        padding: 0 calc((100vw - 470px)/2);
+    }
+    
+    .form__grid{
+        grid-template-columns: 200px 250px;
+        grid-template-rows: 50px 50px;
+        column-gap: 15px;
+        justify-content: center;
+    }
+
+    .form__input--comment{
+        height: 176.47px;
+        background: #FFF8F4;
+        border: 2px solid #000000;
+        border-radius: 7px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form__input::placeholder{
+        position: absolute;
+        top: 5px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+    }
+
+    .contacts__button{
+        margin-left: calc(471px - 303px);
+    }
+}
+
+
+@media (max-width: 720px){
+    .contacts{
+        margin-top: 680px;
+    }
+
+}
+
+@media (max-width: 640px){
+    .contacts{
+        margin-top: 800px;
+    }
+
+} 
+
+@media (max-width: 540px){
+    .contacts{
+        margin-top: 800px;
+    }
+
+    .contacts__form{
+        padding: 0 50px;
+    }
+
+    .form__input{
+        height: 45px;
+    }
+
+    .form__input--comment{
+        height: 135px;
+    }
+    .form__grid{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .form__flex{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .contacts__button{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+} 
 
 @media (max-width: 415px) {
     .contacts{
@@ -118,9 +212,6 @@
         margin-bottom: 20px;
     }
     
-    .contacts__form{
-        padding: 0 65px;
-    }
 
     
     .form__grid{
@@ -139,7 +230,6 @@
 
     
     .form__input--comment{
-        width: 284px;
         height: 100px;
         background: #FFF8F4;
         border: 2px solid #000000;
@@ -177,13 +267,17 @@
     }
 }
 
-@media (max-width:394px) {
+@media (max-width: 394px){
     .contacts{
-    width: 393px;
+        margin-top: 285px;
     }
+
+    .form__input{
+        height: 30px;
+        padding-left: 10px;
+    }
+
     .form__input--comment{
-        width: calc(393px - 130px);
+        height: 90px;
     }
-
-
 }

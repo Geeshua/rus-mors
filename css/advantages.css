@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 210px;
+    padding: 0 210px; 
 }
 
 .advantages__item{
@@ -57,35 +57,35 @@
 
 .advantages::after{
     content: '';
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: -1;
-    top: 1553px;
-    left: 609px;
+    top: calc(1400px + 280px);
+    margin-left: calc((100vw - 704px)/2);
     background-image: url(../img/Ellipse.png);
+    background-repeat: no-repeat;
     width: 704px;
     height: 704px;
 }
 
 .berry{
+    scale: 1.4;
     position: absolute;
-    left: 890px;
-    top: 2102px;
+    margin-left: calc((100vw - 140px)/2);
+    top: 2152px;
 }
 
 @media (max-width: 1668px){
+    .advantages::after{
+        top: calc(1216.25px + 350px);
+    }
+
     .advantages__subtitle{
         margin-bottom:  15px;
     }
-    .advantages::after{
-        top: 1493px;
-        left: 500px;
-        width: 704px;
-        height: 704px;
-    }
+
     .berry{
-        left: 775px;
-        top: 2030px;
+        top: 2100px;
         scale: 1.15;
     }
 }
@@ -105,16 +105,124 @@
         line-height: 30px;
     }
     .advantages::after{
-        top: 1453px;
-        left: 419px;
-        width: 704px;
-        height: 704px;
+        top: calc( 1190px + 250px);
     }
     .berry{
-        left: 700px;
         top: 1982px;
         scale: 1.25;
     }
+}
+
+
+@media (max-width: 1020px){
+    .advantages{
+        padding-top: 340px;
+    }
+
+    .advantages__subtitle{
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .advantages__title::before{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/before-mid.png);
+        width: 91px;
+        height: 31px;
+        margin-right: 3px;
+    }
+    
+    .advantages__title{
+        margin-bottom: 10px;
+    }
+    
+    .advantages__title::after{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/after-mid.png);
+        width: 91px;
+        height: 31px;
+        margin-left: 3px;
+    }
+
+    .advantages__list{
+        padding: 0 110px; 
+    }
+
+    .advantages__item{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .advantages::after{
+        top: calc(1190px - 300px);
+    }
+
+    .berry{
+        top: 1450px;
+        scale: 1;
+    }
+}
+
+
+@media (max-width: 720px){
+    .advantages__item{
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+    .advantages::after{
+        top: 1270px;
+        background-image: url(../img/Ellipse-mid.png);
+        scale: 2;
+        margin-left: calc((100vw - 351px)/2);
+        top: calc(1190px);
+        scale: 1;
+        width: 351px;
+        height: 351px;
+    }
+
+    .advantages__list{
+        padding: 0 10px;
+    }
+
+    .berry{
+        top: 1400px;
+        scale: 0.9;
+    }
+}
+
+@media  (max-width: 448px){
+    .advantages__title::before{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/before-min.png);
+        width: 47px;
+        height: 16px;
+        margin-right: 3px;
+    }
+    
+    .advantages__title{
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .advantages__title::after{
+        content: '';
+        display: inline-flex;
+        background-image: url(../img/after-min.png);
+        width: 47px;
+        height: 16px;
+        margin-left: 3px;
+    }
+
+    .berry{
+        scale: 0.7;
+    }
+
 }
 
 @media (max-width: 415px){
@@ -134,6 +242,8 @@
     
     .advantages__title{
         margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 15px;
     }
     
     .advantages__title::after{
@@ -180,24 +290,31 @@
         display: block;
         position: absolute;
         z-index: -1;
-        top: 303px;
-        left: 82px;
         background-image: url(../img/Ellipse-min.png);
+        margin-left: calc((100vw - 246px)/2);
+        top: calc(301.88px + 5px);
         width: 246px;
         height: 246px;
     }
     
-    .berry{
-        position: absolute;
+    .berry{ 
         scale: 0.35;
-        left: 136px;
         top: 448px;
     }
 }
 
 @media (max-width: 394px) {
-    .advantages{
-    width: 393px;
+    .advantages__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
     }
-    
+}
+
+@media (max-width: 320px) {
+    .advantages__item{
+        font-size: 8px;
+        line-height: 8px;
+    }
 }
