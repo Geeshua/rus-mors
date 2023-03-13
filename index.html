@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rus-Mors</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="index.js"></script>
+    <script src="./smtp.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ruslan+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -72,19 +74,20 @@
             <form class="contacts__form">
                 <div class="form__flex">
                 <div class="form__grid">
-                <input type="text" class="form__input form__input--name" placeholder="Имя">
-                <input type="text" class="form__input form__input--surname" placeholder="Фамилия">
-                <input type="tel" class="form__input form__input--phone" placeholder="Телефон">
-                <input type="email" class="form__input form__input--email" placeholder="Почта">
+                <input type="text" class="form__input form__input--name" placeholder="Имя" id="name">
+                <input type="text" class="form__input form__input--surname" placeholder="Фамилия" id="surname">
+                <input type="tel" class="form__input form__input--phone" placeholder="Телефон" id="phone">
+                <input type="email" class="form__input form__input--email" placeholder="Почта" id="mail">
                 </div>
                 <textarea type="text" class="form__input form__input--comment">  </textarea>
                 </div>
-                <button type="submit" class="contacts__button"> Отправить </button>
+                <button type="submit" class="contacts__button" onclick="sendEmail()"> Отправить </button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
+        <div class="footer-pines"></div>
         <p class="footer-text">rus-mors@mail.ru</p>
         <p class="footer-text">+7(999)-999-99-99</p>
     </footer>

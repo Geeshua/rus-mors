@@ -15,21 +15,21 @@
     color: #FFFFFF;
 }
 
-.footer::before{
-    content: '';
+/* .footer-pines{
     background-image: url(../img/pines_bottom.png);
     background-repeat: no-repeat;
     display: block;
     position: absolute;
+    top: (100% * 3);
     z-index: 1;
     align-self: self-end;
-    padding-bottom: 400px;
+    padding-bottom: 0;
     left: 0;
     width: 100vw;
     height: 315px;
-}
+} */
 
-@media (max-width: 1668px){
+/* @media (max-width: 1668px){
     .footer::before{
         height: 273.66px;
         background-image: url(../img/pines_bottom-1668.png);
@@ -55,7 +55,7 @@
     .footer::before{
         width: 100vw;
     }
-}
+} */
 
 @media (max-width: 1020px){
     .footer-text{
@@ -98,7 +98,7 @@
         color: #FFFFFF;
     }
     
-    .footer::before{
+    /* .footer::before{
         content: '';
         background-image: url(../img/pines_bottom-414.png);
         display: block;
@@ -107,12 +107,12 @@
         left: 0;
         height: 67.92px;
         padding-bottom: 115px;
-    }    
+    }     */
 }
 
-
+/* 
 @media (max-width: 394px){
     .footer::before{
         height: 64.48px;
     }
-}
+} */
